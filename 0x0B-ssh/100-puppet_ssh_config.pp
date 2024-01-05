@@ -7,4 +7,5 @@ file { 'ect/ssh/ssh_config':
 	#ssh clint configration
 	host*
 	IdentityFile ~/.ssh/school
-	passwordauthentication no
+	passwordauthentication no",
+}
