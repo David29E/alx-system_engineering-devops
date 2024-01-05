@@ -3,9 +3,10 @@
 file { 'ect/ssh/ssh_config':
         ensure => present,
 
-	content =>"
+content =>"
 	#ssh clint configration
 	host*
 	IdentityFile ~/.ssh/school
-	passwordauthentication no",
+	passwordauthentication no
+	",
 }
