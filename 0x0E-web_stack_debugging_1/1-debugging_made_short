@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# configures an Nginx server to listen on port 80
+# creats a symbolic link (-s) option betwen the nginx configration file
+
+# and the enabled sites directory
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+
+# restart nginx 
+service nginx start
+
+#terminate the first nginx process
+kill "$(pgrep 'nginx' | head -1)"
